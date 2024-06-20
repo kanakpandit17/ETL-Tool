@@ -1,0 +1,206 @@
+2024-06-20 11:34:09,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:09,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:09,851:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:09,852:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:23,755:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:23,756:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:23,756:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:23,756:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:42,441:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:42,442:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:42,442:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:34:42,442:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:31,618:INFO:PyCaret ClassificationExperiment
+2024-06-20 11:35:31,618:INFO:Logging name: clf-default-name
+2024-06-20 11:35:31,619:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-06-20 11:35:31,619:INFO:version 3.3.2
+2024-06-20 11:35:31,619:INFO:Initializing setup()
+2024-06-20 11:35:31,619:INFO:self.USI: 47dc
+2024-06-20 11:35:31,619:INFO:self._variable_keys: {'html_param', 'data', 'fold_groups_param', 'y_train', 'y', 'y_test', 'X', 'X_train', 'pipeline', '_available_plots', 'target_param', 'gpu_param', 'idx', 'fold_shuffle_param', 'USI', 'fold_generator', 'is_multiclass', 'exp_name_log', '_ml_usecase', 'n_jobs_param', 'X_test', 'memory', 'gpu_n_jobs_param', 'exp_id', 'log_plots_param', 'seed', 'logging_param', 'fix_imbalance'}
+2024-06-20 11:35:31,619:INFO:Checking environment
+2024-06-20 11:35:31,619:INFO:python_version: 3.11.0
+2024-06-20 11:35:31,619:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-06-20 11:35:31,619:INFO:machine: AMD64
+2024-06-20 11:35:31,659:INFO:platform: Windows-10-10.0.22631-SP0
+2024-06-20 11:35:31,663:INFO:Memory: svmem(total=16934494208, available=4944769024, percent=70.8, used=11989725184, free=4944769024)
+2024-06-20 11:35:31,664:INFO:Physical Core: 4
+2024-06-20 11:35:31,664:INFO:Logical Core: 8
+2024-06-20 11:35:31,664:INFO:Checking libraries
+2024-06-20 11:35:31,664:INFO:System:
+2024-06-20 11:35:31,664:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-06-20 11:35:31,664:INFO:executable: C:\Users\kanakpandit17\Desktop\tool\.venv\Scripts\python.exe
+2024-06-20 11:35:31,664:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-06-20 11:35:31,664:INFO:PyCaret required dependencies:
+2024-06-20 11:35:36,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:36,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:36,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:36,953:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:39,073:INFO:PyCaret ClassificationExperiment
+2024-06-20 11:35:39,074:INFO:Logging name: clf-default-name
+2024-06-20 11:35:39,074:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-06-20 11:35:39,074:INFO:version 3.3.2
+2024-06-20 11:35:39,074:INFO:Initializing setup()
+2024-06-20 11:35:39,074:INFO:self.USI: 51f7
+2024-06-20 11:35:39,074:INFO:self._variable_keys: {'pipeline', 'exp_id', 'X_train', 'is_multiclass', 'fix_imbalance', '_ml_usecase', 'seed', 'exp_name_log', 'data', 'memory', 'y', 'USI', 'y_train', 'X_test', 'idx', 'n_jobs_param', 'log_plots_param', 'gpu_n_jobs_param', 'html_param', 'fold_generator', 'fold_groups_param', 'X', 'y_test', 'fold_shuffle_param', 'target_param', '_available_plots', 'logging_param', 'gpu_param'}
+2024-06-20 11:35:39,074:INFO:Checking environment
+2024-06-20 11:35:39,074:INFO:python_version: 3.11.0
+2024-06-20 11:35:39,074:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-06-20 11:35:39,074:INFO:machine: AMD64
+2024-06-20 11:35:39,108:INFO:platform: Windows-10-10.0.22631-SP0
+2024-06-20 11:35:39,114:INFO:Memory: svmem(total=16934494208, available=4982431744, percent=70.6, used=11952062464, free=4982431744)
+2024-06-20 11:35:39,115:INFO:Physical Core: 4
+2024-06-20 11:35:39,115:INFO:Logical Core: 8
+2024-06-20 11:35:39,115:INFO:Checking libraries
+2024-06-20 11:35:39,115:INFO:System:
+2024-06-20 11:35:39,115:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-06-20 11:35:39,116:INFO:executable: C:\Users\kanakpandit17\Desktop\tool\.venv\Scripts\python.exe
+2024-06-20 11:35:39,116:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-06-20 11:35:39,116:INFO:PyCaret required dependencies:
+2024-06-20 11:35:43,711:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:43,711:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:43,711:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:35:43,711:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:02,902:INFO:PyCaret ClassificationExperiment
+2024-06-20 11:36:02,903:INFO:Logging name: clf-default-name
+2024-06-20 11:36:02,903:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-06-20 11:36:02,903:INFO:version 3.3.2
+2024-06-20 11:36:02,903:INFO:Initializing setup()
+2024-06-20 11:36:02,903:INFO:self.USI: cff7
+2024-06-20 11:36:02,903:INFO:self._variable_keys: {'X_train', 'USI', 'n_jobs_param', '_available_plots', 'fold_shuffle_param', 'seed', 'X_test', 'y_train', 'is_multiclass', 'fix_imbalance', 'gpu_param', 'logging_param', 'fold_groups_param', 'target_param', 'idx', 'X', '_ml_usecase', 'log_plots_param', 'y', 'html_param', 'fold_generator', 'y_test', 'exp_id', 'exp_name_log', 'memory', 'pipeline', 'gpu_n_jobs_param', 'data'}
+2024-06-20 11:36:02,903:INFO:Checking environment
+2024-06-20 11:36:02,903:INFO:python_version: 3.11.0
+2024-06-20 11:36:02,903:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-06-20 11:36:02,903:INFO:machine: AMD64
+2024-06-20 11:36:02,938:INFO:platform: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:02,946:INFO:Memory: svmem(total=16934494208, available=5524557824, percent=67.4, used=11409936384, free=5524557824)
+2024-06-20 11:36:02,946:INFO:Physical Core: 4
+2024-06-20 11:36:02,946:INFO:Logical Core: 8
+2024-06-20 11:36:02,946:INFO:Checking libraries
+2024-06-20 11:36:02,946:INFO:System:
+2024-06-20 11:36:02,946:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-06-20 11:36:02,946:INFO:executable: C:\Users\kanakpandit17\Desktop\tool\.venv\Scripts\python.exe
+2024-06-20 11:36:02,946:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:02,946:INFO:PyCaret required dependencies:
+2024-06-20 11:36:07,153:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:07,153:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:07,153:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:07,153:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:09,183:INFO:PyCaret ClassificationExperiment
+2024-06-20 11:36:09,183:INFO:Logging name: clf-default-name
+2024-06-20 11:36:09,183:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-06-20 11:36:09,183:INFO:version 3.3.2
+2024-06-20 11:36:09,183:INFO:Initializing setup()
+2024-06-20 11:36:09,183:INFO:self.USI: abed
+2024-06-20 11:36:09,183:INFO:self._variable_keys: {'log_plots_param', 'exp_name_log', '_available_plots', 'X_train', 'fold_shuffle_param', 'fix_imbalance', 'X_test', 'fold_groups_param', 'target_param', '_ml_usecase', 'y_test', 'pipeline', 'fold_generator', 'y', 'exp_id', 'idx', 'n_jobs_param', 'memory', 'gpu_param', 'X', 'html_param', 'logging_param', 'is_multiclass', 'y_train', 'USI', 'seed', 'gpu_n_jobs_param', 'data'}
+2024-06-20 11:36:09,183:INFO:Checking environment
+2024-06-20 11:36:09,183:INFO:python_version: 3.11.0
+2024-06-20 11:36:09,183:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-06-20 11:36:09,183:INFO:machine: AMD64
+2024-06-20 11:36:09,218:INFO:platform: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:09,224:INFO:Memory: svmem(total=16934494208, available=5529833472, percent=67.3, used=11404660736, free=5529833472)
+2024-06-20 11:36:09,225:INFO:Physical Core: 4
+2024-06-20 11:36:09,225:INFO:Logical Core: 8
+2024-06-20 11:36:09,225:INFO:Checking libraries
+2024-06-20 11:36:09,225:INFO:System:
+2024-06-20 11:36:09,225:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-06-20 11:36:09,225:INFO:executable: C:\Users\kanakpandit17\Desktop\tool\.venv\Scripts\python.exe
+2024-06-20 11:36:09,225:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:09,225:INFO:PyCaret required dependencies:
+2024-06-20 11:36:13,770:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:13,771:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:13,771:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:13,771:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:22,644:INFO:PyCaret ClassificationExperiment
+2024-06-20 11:36:22,645:INFO:Logging name: clf-default-name
+2024-06-20 11:36:22,645:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-06-20 11:36:22,645:INFO:version 3.3.2
+2024-06-20 11:36:22,645:INFO:Initializing setup()
+2024-06-20 11:36:22,645:INFO:self.USI: 12ce
+2024-06-20 11:36:22,645:INFO:self._variable_keys: {'y_train', 'gpu_n_jobs_param', 'X', '_ml_usecase', 'log_plots_param', 'idx', 'gpu_param', '_available_plots', 'y_test', 'pipeline', 'n_jobs_param', 'fold_generator', 'fix_imbalance', 'USI', 'y', 'X_train', 'target_param', 'exp_id', 'seed', 'logging_param', 'html_param', 'fold_groups_param', 'fold_shuffle_param', 'data', 'memory', 'is_multiclass', 'X_test', 'exp_name_log'}
+2024-06-20 11:36:22,645:INFO:Checking environment
+2024-06-20 11:36:22,645:INFO:python_version: 3.11.0
+2024-06-20 11:36:22,645:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-06-20 11:36:22,645:INFO:machine: AMD64
+2024-06-20 11:36:22,694:INFO:platform: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:22,703:INFO:Memory: svmem(total=16934494208, available=5612990464, percent=66.9, used=11321503744, free=5612990464)
+2024-06-20 11:36:22,703:INFO:Physical Core: 4
+2024-06-20 11:36:22,703:INFO:Logical Core: 8
+2024-06-20 11:36:22,703:INFO:Checking libraries
+2024-06-20 11:36:22,704:INFO:System:
+2024-06-20 11:36:22,704:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-06-20 11:36:22,704:INFO:executable: C:\Users\kanakpandit17\Desktop\tool\.venv\Scripts\python.exe
+2024-06-20 11:36:22,704:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:22,704:INFO:PyCaret required dependencies:
+2024-06-20 11:36:29,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:29,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:29,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:29,681:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:31,696:INFO:PyCaret ClassificationExperiment
+2024-06-20 11:36:31,696:INFO:Logging name: clf-default-name
+2024-06-20 11:36:31,696:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-06-20 11:36:31,696:INFO:version 3.3.2
+2024-06-20 11:36:31,696:INFO:Initializing setup()
+2024-06-20 11:36:31,696:INFO:self.USI: a6ef
+2024-06-20 11:36:31,696:INFO:self._variable_keys: {'memory', 'exp_id', '_available_plots', 'y_train', 'fold_groups_param', 'gpu_param', 'log_plots_param', 'html_param', 'USI', 'X_train', 'fold_shuffle_param', 'X_test', 'data', 'gpu_n_jobs_param', 'pipeline', 'seed', 'exp_name_log', 'logging_param', 'target_param', 'y_test', 'X', 'is_multiclass', 'idx', 'fix_imbalance', 'y', '_ml_usecase', 'n_jobs_param', 'fold_generator'}
+2024-06-20 11:36:31,697:INFO:Checking environment
+2024-06-20 11:36:31,697:INFO:python_version: 3.11.0
+2024-06-20 11:36:31,697:INFO:python_build: ('main', 'Oct 24 2022 18:26:48')
+2024-06-20 11:36:31,697:INFO:machine: AMD64
+2024-06-20 11:36:31,729:INFO:platform: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:31,735:INFO:Memory: svmem(total=16934494208, available=5620097024, percent=66.8, used=11314397184, free=5620097024)
+2024-06-20 11:36:31,735:INFO:Physical Core: 4
+2024-06-20 11:36:31,735:INFO:Logical Core: 8
+2024-06-20 11:36:31,735:INFO:Checking libraries
+2024-06-20 11:36:31,735:INFO:System:
+2024-06-20 11:36:31,735:INFO:    python: 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]
+2024-06-20 11:36:31,735:INFO:executable: C:\Users\kanakpandit17\Desktop\tool\.venv\Scripts\python.exe
+2024-06-20 11:36:31,735:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-06-20 11:36:31,735:INFO:PyCaret required dependencies:
+2024-06-20 11:36:35,794:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:35,794:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:35,794:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:36:35,794:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:37:13,922:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:37:13,922:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:37:13,922:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-06-20 11:37:13,923:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.

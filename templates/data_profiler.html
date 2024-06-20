@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Profiler</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form styles */
+        form {
+            text-align: center; /* Center the form */
+            margin-bottom: 20px;
+        }
+
+        /* File input styles */
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Profiler</h1>
+        
+        <form action="/data_profiler" method="post" enctype="multipart/form-data">
+            <label for="file-input" class="custom-button">Choose File</label>
+            <input type="file" id="file-input" name="file" accept=".csv" style="display: none;"><br><br>
+            <button type="submit" class="custom-button">Upload CSV</button>
+        </form>
+
+        {% if analysis_results %}
+        <h2>Analysis Results</h2>
+        <table>
+            <tr>
+                <th>Analysis Metric</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Missing Values</td>
+                <td>{% for column, count in analysis_results.missing_values.items() %}{{ column }}: {{ count }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
+            </tr>
+            <tr>
+                <td>Rows Count</td>
+                <td>{{ analysis_results.rows_count }}</td>
+            </tr>
+            <tr>
+                <td>Columns Count</td>
+                <td>{{ analysis_results.columns_count }}</td>
+            </tr>
+            <tr>
+                <td>Data Types</td>
+                <td>{% for column, dtype in analysis_results.data_types.items() %}{{ column }}: {{ dtype }}{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
+            </tr>
+         
+            <!-- Add more analysis results as needed -->
+        </table>
+        {% endif %}
+    </div>
+</body>
+</html>

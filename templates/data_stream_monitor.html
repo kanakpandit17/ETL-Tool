@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Stream Monitor</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form styles */
+        form {
+            text-align: center; /* Center the form */
+            margin-bottom: 20px;
+        }
+
+        /* File input styles */
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Data Stream Monitor styles */
+        #change-counter {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #data-container {
+            margin-top: 50px;
+        }
+
+        .row-details {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #loading-spinner {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Stream Monitor</h1>
+        
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" accept=".csv" required>
+            <label for="file-input" class="custom-button">Load CSV Dataset</label><br><br>
+            <button type="submit" class="custom-button">Submit</button>
+        </form>
+
+        <!-- <div id="change-counter">Changes: <span id="change-count">0</span></div> -->
+        
+        <div id="data-container"></div>
+
+        <div id="loading-spinner">Data Stream is running in the terminal with log time, please check there!</div>
+    </div>
+
+    <script>
+        var changeCount = 0;
+
+        function displayRowData(data) {
+            changeCount++;
+            document.getElementById('change-count').innerText = changeCount;
+            var div = document.createElement('div');
+            div.classList.add('row-details');
+            var columnsChanged = (data.columns_changed.length > 0) ? data.columns_changed.join(', ') : 'No columns changed';
+            var logTime = new Date(data.log_time).toLocaleString();
+            div.innerHTML = `<p>Changes: ${data.changes_count}</p><p>Columns changed: ${columnsChanged}</p><p>Log time: ${logTime}</p>`;
+            document.getElementById('data-container').appendChild(div);
+        }
+
+        // Submit event handler for the form
+        document.getElementById('upload-form').addEventListener('submit', function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+
+            // Show loading spinner
+            document.getElementById('loading-spinner').style.display = 'block';
+            
+            // Fetch data from server and load it
+            var formData = new FormData();
+            formData.append('file', document.getElementById('file-input').files[0]);
+            fetch('/data_stream_monitor', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Clear existing row data
+                document.getElementById('data-container').innerHTML = '';
+                changeCount = 0;
+                document.getElementById('change-count').innerText = changeCount;
+
+                // Hide loading spinner
+                document.getElementById('loading-spinner').style.display = 'none';
+
+                // Display row details
+                data.forEach(row => {
+                    displayRowData(row);
+                });
+            })
+            .catch(error => {
+                // Hide loading spinner and display error message
+                document.getElementById('loading-spinner').style.display = 'none';
+                console.error('Error fetching data:', error);
+                alert('An error occurred while fetching data. Please try again.');
+            });
+        });
+    </script>
+</body>
+</html>

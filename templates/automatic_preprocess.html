@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Preprocess</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form styles */
+        form {
+            text-align: center; /* Center the form */
+            margin-bottom: 20px;
+        }
+
+        /* File input styles */
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Download link styles */
+        .download-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .download-link a {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-link a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Automatic Preprocess</h1>
+        
+        <form id="upload-form" action="/automatic_preprocess" method="post" enctype="multipart/form-data">
+            <label for="file-input" class="custom-button">Choose File</label>
+            <input type="file" id="file-input" name="file" accept=".csv" required style="display: none;"><br><br>
+            <button type="submit" class="custom-button">Preprocess Dataset</button>
+        </form>
+
+        {% if cleaned_file_path %}
+            <div class="download-link">
+                <h2>Download Cleaned CSV File:</h2>
+                <a href="{{ cleaned_file_path }}" download="cleaned_file.csv">Download Cleaned CSV File</a>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

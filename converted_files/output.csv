@@ -1,0 +1,14 @@
+Category/code,Count,Percentage,p value
+"Simple, generally negative tweets",130,2.1%,0.382
+"Simple, generally positive tweets",100,1.6%,0.263
+Positive hype,2410,38.3%,0.0087**
+Negative hype,996,15.8%,0.525
+Positive economic impacts,143,2.3%,0.419
+Negative economic impacts,121,1.9%,0.353
+Positive environmental impacts,43,0.7%,0.158
+Negative safety,136,2.2%,0.400
+Calls to invest in other technology,404,6.4%,0.847
+Mentions of economic disparity,104,1.7%,0.283
+Neutral/neutralised,1351,21.5%,0.285
+Indiscernible,350,5.6%,0.774
+Total,"6,288",100%,

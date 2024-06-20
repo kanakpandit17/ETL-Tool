@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://th.bing.com/th/id/OIP.Wcl6kvVKXcvQ4qm5PohNxwAAAA?rs=1&pid=ImgDetMain') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Cover the entire viewport */
+        }
+
+        /* Main container styles */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        /* Title styles */
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        /* Options list styles */
+        .options {
+            text-align: center; /* Center the options horizontally */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        /* Button styles */
+        .button {
+            display: inline-block;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+            width: 100%; /* Make button width 100% */
+            box-sizing: border-box; /* Include padding and border in button width */
+        }
+
+        /* Different button colors */
+        .button.format-converter {
+            background-color: #007bff; /* Blue */
+        }
+
+        .button.stream-monitor {
+            background-color: #28a745; /* Green */
+        }
+
+        .button.profiler {
+            background-color: #dc3545; /* Red */
+        }
+
+        .button.insights {
+            background-color: #ffc107; /* Yellow */
+        }
+
+        .button.compression {
+            background-color: #17a2b8; /* Cyan */
+        }
+        .button.preprocess{
+            background-color: #812f76; /* Cyan */
+        }
+        .button.predict{
+            background-color: #8124d6; /* Cyan */
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            opacity: 0.8; /* Reduce opacity on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DataSphere: An ETL Simplifier</h1>
+        
+        <div class="options">
+            <h2>Choose an Option:</h2>
+            <ul>
+                <li><a class="button format-converter" href="/data_format_converter">Data Format Converter</a></li>
+                <li><a class="button stream-monitor" href="/data_stream_monitor">Data Stream Monitor</a></li>
+                <li><a class="button profiler" href="/data_profiler">Data Profiler</a></li>
+                <li><a class="button insights" href="/data_insights">Data Insights</a></li>
+                <li><a class="button compression" href="/data_compression">Data Compression</a></li>
+                <li><a class="button preprocess" href="/automatic_preprocess">Automatic Preprocess</a></li>
+                <li><a class="button predict" href="/predictor">ML Predictor</a></li>
+                <!-- <li><a href="/target_column">Target Column Recommendation</a></li> -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

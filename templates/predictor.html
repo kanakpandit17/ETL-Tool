@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Predictor</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form styles */
+        form {
+            text-align: center; /* Center the form */
+            margin-bottom: 20px;
+        }
+
+        /* File input styles */
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-button {
+           margin: 10px; /* Adjust the margin value as needed */
+           padding: 10px 20px;
+           background-color: #007bff;
+           color: #ffffff;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+         }
+
+
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Add margin to create space */
+        .upload-train-file {
+            margin-bottom: 10px;
+        }
+
+        /* Predictions styles */
+        .predictions {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        /* Download link styles */
+        .download-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .download-link a {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-link a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSV Predictor</h1>
+        <form action="/predictor" method="POST" enctype="multipart/form-data">
+            <label for="train_file" class="custom-button upload-train-file">Upload Train File:</label>
+            <input type="file" id="train_file" name="train_file"><br><br><br>
+            <label for="test_file" class="custom-button">Upload Test File:</label>
+            <input type="file" id="test_file" name="test_file"><br><br>
+            <input type="submit" value="Predict" class="custom-button">
+        </form>
+        {% if predictions %}
+        <div class="predictions">
+            <h2>Predictions:</h2>
+            {{ predictions | safe }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
